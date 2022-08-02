@@ -15,5 +15,11 @@ public class NumberArray {
         for(int age : studentsMoney) {
             System.out.println(age);
         }
+        int max = studentsAge[0];
+        for (int index = 1; index < studentsAge.length; index++) {
+            max = Math.max(max, studentsAge[index]);
+        }
+        System.out.println("Maximum age: " + max);
     }
 }
+
